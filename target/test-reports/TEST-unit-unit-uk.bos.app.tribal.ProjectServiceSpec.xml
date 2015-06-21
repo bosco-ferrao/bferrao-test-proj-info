@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="bosCla" name="uk.bos.app.tribal.ProjectServiceSpec" tests="10" time="2.675" timestamp="2015-06-20T16:52:50">
+  <properties />
+  <testcase classname="uk.bos.app.tribal.ProjectServiceSpec" name="Create project with priority greater than number of projects" time="1.803" />
+  <testcase classname="uk.bos.app.tribal.ProjectServiceSpec" name="Create project with priority value (1) which is currently used" time="0.076" />
+  <testcase classname="uk.bos.app.tribal.ProjectServiceSpec" name="Create project with priority value (3) which is currently used" time="0.085" />
+  <testcase classname="uk.bos.app.tribal.ProjectServiceSpec" name="Update project with priority value greater than number of projects" time="0.157" />
+  <testcase classname="uk.bos.app.tribal.ProjectServiceSpec" name="Update project with priority(1) value which is currently used(2)" time="0.059" />
+  <testcase classname="uk.bos.app.tribal.ProjectServiceSpec" name="Update projects with priority(1) value which is currently used(1)" time="0.112" />
+  <testcase classname="uk.bos.app.tribal.ProjectServiceSpec" name="Fix gaps in priority values after deletion of the project in the middle" time="0.15" />
+  <testcase classname="uk.bos.app.tribal.ProjectServiceSpec" name="Fix gaps in priority values after deletion of the project with priority 1" time="0.057" />
+  <testcase classname="uk.bos.app.tribal.ProjectServiceSpec" name="Remove the last element." time="0.053" />
+  <testcase classname="uk.bos.app.tribal.ProjectServiceSpec" name="List of the projects should be ordered by priorities" time="0.103" />
+  <system-out><![CDATA[--Output from Create project with priority greater than number of projects--
+--Output from Create project with priority value (1) which is currently used--
+--Output from Create project with priority value (3) which is currently used--
+--Output from Update project with priority value greater than number of projects--
+--Output from Update project with priority(1) value which is currently used(2)--
+--Output from Update projects with priority(1) value which is currently used(1)--
+--Output from Fix gaps in priority values after deletion of the project in the middle--
+--Output from Fix gaps in priority values after deletion of the project with priority 1--
+--Output from Remove the last element.--
+--Output from List of the projects should be ordered by priorities--
+]]></system-out>
+  <system-err><![CDATA[--Output from Create project with priority greater than number of projects--
+--Output from Create project with priority value (1) which is currently used--
+--Output from Create project with priority value (3) which is currently used--
+--Output from Update project with priority value greater than number of projects--
+--Output from Update project with priority(1) value which is currently used(2)--
+--Output from Update projects with priority(1) value which is currently used(1)--
+--Output from Fix gaps in priority values after deletion of the project in the middle--
+--Output from Fix gaps in priority values after deletion of the project with priority 1--
+--Output from Remove the last element.--
+--Output from List of the projects should be ordered by priorities--
+]]></system-err>
+</testsuite>

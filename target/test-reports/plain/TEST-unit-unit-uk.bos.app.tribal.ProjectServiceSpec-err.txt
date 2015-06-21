@@ -1,0 +1,10 @@
+--Output from Create project with priority greater than number of projects--
+--Output from Create project with priority value (1) which is currently used--
+--Output from Create project with priority value (3) which is currently used--
+--Output from Update project with priority value greater than number of projects--
+--Output from Update project with priority(1) value which is currently used(2)--
+--Output from Update projects with priority(1) value which is currently used(1)--
+--Output from Fix gaps in priority values after deletion of the project in the middle--
+--Output from Fix gaps in priority values after deletion of the project with priority 1--
+--Output from Remove the last element.--
+--Output from List of the projects should be ordered by priorities--

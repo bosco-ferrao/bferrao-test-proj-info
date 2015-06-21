@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="0" hostname="bosCla" id="0" name="PersonControllerSpec" package="uk.bos.app.tribal" tests="2" time="4.756" timestamp="2015-06-20T16:52:43">
+      <properties />
+
+      <testcase classname="uk.bos.app.tribal.PersonControllerSpec" name="Delete person from existing project" time="4.626" />
+
+      <testcase classname="uk.bos.app.tribal.PersonControllerSpec" name="Delete person from non-existing project" time="0.034" />
+
+      <system-out><![CDATA[--Output from Delete person from existing project--
+--Output from Delete person from non-existing project--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from Delete person from existing project--
+--Output from Delete person from non-existing project--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="bosCla" id="1" name="PersonSpec" package="uk.bos.app.tribal" tests="3" time="1.321" timestamp="2015-06-20T16:52:48">
+      <properties />
+
+      <testcase classname="uk.bos.app.tribal.PersonSpec" name="Person&apos;s name or surname cannot be null or blank" time="1.205" />
+
+      <testcase classname="uk.bos.app.tribal.PersonSpec" name="Person&apos;s name or surname cannot have more than 50 chars" time="0.036" />
+
+      <testcase classname="uk.bos.app.tribal.PersonSpec" name="Person must have position" time="0.041" />
+
+      <system-out><![CDATA[--Output from Person's name or surname cannot be null or blank--
+--Output from Person's name or surname cannot have more than 50 chars--
+--Output from Person must have position--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from Person's name or surname cannot be null or blank--
+--Output from Person's name or surname cannot have more than 50 chars--
+--Output from Person must have position--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="bosCla" id="2" name="ProjectServiceSpec" package="uk.bos.app.tribal" tests="10" time="2.675" timestamp="2015-06-20T16:52:50">
+      <properties />
+
+      <testcase classname="uk.bos.app.tribal.ProjectServiceSpec" name="Create project with priority greater than number of projects" time="1.803" />
+
+      <testcase classname="uk.bos.app.tribal.ProjectServiceSpec" name="Create project with priority value (1) which is currently used" time="0.076" />
+
+      <testcase classname="uk.bos.app.tribal.ProjectServiceSpec" name="Create project with priority value (3) which is currently used" time="0.085" />
+
+      <testcase classname="uk.bos.app.tribal.ProjectServiceSpec" name="Update project with priority value greater than number of projects" time="0.157" />
+
+      <testcase classname="uk.bos.app.tribal.ProjectServiceSpec" name="Update project with priority(1) value which is currently used(2)" time="0.059" />
+
+      <testcase classname="uk.bos.app.tribal.ProjectServiceSpec" name="Update projects with priority(1) value which is currently used(1)" time="0.112" />
+
+      <testcase classname="uk.bos.app.tribal.ProjectServiceSpec" name="Fix gaps in priority values after deletion of the project in the middle" time="0.15" />
+
+      <testcase classname="uk.bos.app.tribal.ProjectServiceSpec" name="Fix gaps in priority values after deletion of the project with priority 1" time="0.057" />
+
+      <testcase classname="uk.bos.app.tribal.ProjectServiceSpec" name="Remove the last element." time="0.053" />
+
+      <testcase classname="uk.bos.app.tribal.ProjectServiceSpec" name="List of the projects should be ordered by priorities" time="0.103" />
+
+      <system-out><![CDATA[--Output from Create project with priority greater than number of projects--
+--Output from Create project with priority value (1) which is currently used--
+--Output from Create project with priority value (3) which is currently used--
+--Output from Update project with priority value greater than number of projects--
+--Output from Update project with priority(1) value which is currently used(2)--
+--Output from Update projects with priority(1) value which is currently used(1)--
+--Output from Fix gaps in priority values after deletion of the project in the middle--
+--Output from Fix gaps in priority values after deletion of the project with priority 1--
+--Output from Remove the last element.--
+--Output from List of the projects should be ordered by priorities--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from Create project with priority greater than number of projects--
+--Output from Create project with priority value (1) which is currently used--
+--Output from Create project with priority value (3) which is currently used--
+--Output from Update project with priority value greater than number of projects--
+--Output from Update project with priority(1) value which is currently used(2)--
+--Output from Update projects with priority(1) value which is currently used(1)--
+--Output from Fix gaps in priority values after deletion of the project in the middle--
+--Output from Fix gaps in priority values after deletion of the project with priority 1--
+--Output from Remove the last element.--
+--Output from List of the projects should be ordered by priorities--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="bosCla" id="3" name="ProjectSpec" package="uk.bos.app.tribal" tests="5" time="0.428" timestamp="2015-06-20T16:52:52">
+      <properties />
+
+      <testcase classname="uk.bos.app.tribal.ProjectSpec" name="Project name cannot be null or blank" time="0.162" />
+
+      <testcase classname="uk.bos.app.tribal.ProjectSpec" name="Project name must be alphanumeric" time="0.061" />
+
+      <testcase classname="uk.bos.app.tribal.ProjectSpec" name="Project code cannot be null or blank" time="0.079" />
+
+      <testcase classname="uk.bos.app.tribal.ProjectSpec" name="Project code must be alphanumeric" time="0.05" />
+
+      <testcase classname="uk.bos.app.tribal.ProjectSpec" name="Priority cannot be lower than number 1" time="0.057" />
+
+      <system-out><![CDATA[--Output from Project name cannot be null or blank--
+--Output from Project name must be alphanumeric--
+--Output from Project code cannot be null or blank--
+--Output from Project code must be alphanumeric--
+--Output from Priority cannot be lower than number 1--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from Project name cannot be null or blank--
+--Output from Project name must be alphanumeric--
+--Output from Project code cannot be null or blank--
+--Output from Project code must be alphanumeric--
+--Output from Priority cannot be lower than number 1--
+]]></system-err>
+
+  </testsuite>
+</testsuites>

@@ -1,0 +1,22 @@
+Testsuite: uk.bos.app.tribal.ProjectSpec
+Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.428 sec
+------------- Standard Output ---------------
+--Output from Project name cannot be null or blank--
+--Output from Project name must be alphanumeric--
+--Output from Project code cannot be null or blank--
+--Output from Project code must be alphanumeric--
+--Output from Priority cannot be lower than number 1--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from Project name cannot be null or blank--
+--Output from Project name must be alphanumeric--
+--Output from Project code cannot be null or blank--
+--Output from Project code must be alphanumeric--
+--Output from Priority cannot be lower than number 1--
+------------- ---------------- ---------------
+
+Testcase: Project name cannot be null or blank took 0.162 sec
+Testcase: Project name must be alphanumeric took 0.061 sec
+Testcase: Project code cannot be null or blank took 0.079 sec
+Testcase: Project code must be alphanumeric took 0.05 sec
+Testcase: Priority cannot be lower than number 1 took 0.057 sec

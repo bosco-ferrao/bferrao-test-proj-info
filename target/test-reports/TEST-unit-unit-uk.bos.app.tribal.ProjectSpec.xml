@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="bosCla" name="uk.bos.app.tribal.ProjectSpec" tests="5" time="0.428" timestamp="2015-06-20T16:52:52">
+  <properties />
+  <testcase classname="uk.bos.app.tribal.ProjectSpec" name="Project name cannot be null or blank" time="0.162" />
+  <testcase classname="uk.bos.app.tribal.ProjectSpec" name="Project name must be alphanumeric" time="0.061" />
+  <testcase classname="uk.bos.app.tribal.ProjectSpec" name="Project code cannot be null or blank" time="0.079" />
+  <testcase classname="uk.bos.app.tribal.ProjectSpec" name="Project code must be alphanumeric" time="0.05" />
+  <testcase classname="uk.bos.app.tribal.ProjectSpec" name="Priority cannot be lower than number 1" time="0.057" />
+  <system-out><![CDATA[--Output from Project name cannot be null or blank--
+--Output from Project name must be alphanumeric--
+--Output from Project code cannot be null or blank--
+--Output from Project code must be alphanumeric--
+--Output from Priority cannot be lower than number 1--
+]]></system-out>
+  <system-err><![CDATA[--Output from Project name cannot be null or blank--
+--Output from Project name must be alphanumeric--
+--Output from Project code cannot be null or blank--
+--Output from Project code must be alphanumeric--
+--Output from Priority cannot be lower than number 1--
+]]></system-err>
+</testsuite>

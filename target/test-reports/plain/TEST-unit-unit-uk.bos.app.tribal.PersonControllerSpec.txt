@@ -1,0 +1,13 @@
+Testsuite: uk.bos.app.tribal.PersonControllerSpec
+Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 4.756 sec
+------------- Standard Output ---------------
+--Output from Delete person from existing project--
+--Output from Delete person from non-existing project--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from Delete person from existing project--
+--Output from Delete person from non-existing project--
+------------- ---------------- ---------------
+
+Testcase: Delete person from existing project took 4.626 sec
+Testcase: Delete person from non-existing project took 0.034 sec

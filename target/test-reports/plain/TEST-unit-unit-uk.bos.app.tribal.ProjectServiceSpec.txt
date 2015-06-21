@@ -1,0 +1,37 @@
+Testsuite: uk.bos.app.tribal.ProjectServiceSpec
+Tests run: 10, Failures: 0, Errors: 0, Time elapsed: 2.675 sec
+------------- Standard Output ---------------
+--Output from Create project with priority greater than number of projects--
+--Output from Create project with priority value (1) which is currently used--
+--Output from Create project with priority value (3) which is currently used--
+--Output from Update project with priority value greater than number of projects--
+--Output from Update project with priority(1) value which is currently used(2)--
+--Output from Update projects with priority(1) value which is currently used(1)--
+--Output from Fix gaps in priority values after deletion of the project in the middle--
+--Output from Fix gaps in priority values after deletion of the project with priority 1--
+--Output from Remove the last element.--
+--Output from List of the projects should be ordered by priorities--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from Create project with priority greater than number of projects--
+--Output from Create project with priority value (1) which is currently used--
+--Output from Create project with priority value (3) which is currently used--
+--Output from Update project with priority value greater than number of projects--
+--Output from Update project with priority(1) value which is currently used(2)--
+--Output from Update projects with priority(1) value which is currently used(1)--
+--Output from Fix gaps in priority values after deletion of the project in the middle--
+--Output from Fix gaps in priority values after deletion of the project with priority 1--
+--Output from Remove the last element.--
+--Output from List of the projects should be ordered by priorities--
+------------- ---------------- ---------------
+
+Testcase: Create project with priority greater than number of projects took 1.804 sec
+Testcase: Create project with priority value (1) which is currently used took 0.076 sec
+Testcase: Create project with priority value (3) which is currently used took 0.085 sec
+Testcase: Update project with priority value greater than number of projects took 0.157 sec
+Testcase: Update project with priority(1) value which is currently used(2) took 0.059 sec
+Testcase: Update projects with priority(1) value which is currently used(1) took 0.112 sec
+Testcase: Fix gaps in priority values after deletion of the project in the middle took 0.15 sec
+Testcase: Fix gaps in priority values after deletion of the project with priority 1 took 0.057 sec
+Testcase: Remove the last element. took 0.053 sec
+Testcase: List of the projects should be ordered by priorities took 0.103 sec

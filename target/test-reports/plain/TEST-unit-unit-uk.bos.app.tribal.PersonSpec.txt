@@ -1,0 +1,16 @@
+Testsuite: uk.bos.app.tribal.PersonSpec
+Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 1.321 sec
+------------- Standard Output ---------------
+--Output from Person's name or surname cannot be null or blank--
+--Output from Person's name or surname cannot have more than 50 chars--
+--Output from Person must have position--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from Person's name or surname cannot be null or blank--
+--Output from Person's name or surname cannot have more than 50 chars--
+--Output from Person must have position--
+------------- ---------------- ---------------
+
+Testcase: Person's name or surname cannot be null or blank took 1.205 sec
+Testcase: Person's name or surname cannot have more than 50 chars took 0.036 sec
+Testcase: Person must have position took 0.041 sec

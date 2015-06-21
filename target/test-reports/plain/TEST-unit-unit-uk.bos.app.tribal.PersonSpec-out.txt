@@ -1,0 +1,3 @@
+--Output from Person's name or surname cannot be null or blank--
+--Output from Person's name or surname cannot have more than 50 chars--
+--Output from Person must have position--
