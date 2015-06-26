@@ -16,13 +16,33 @@ class ProjectController {
 		]
 	}
 
+	private def validateProject(Map params, String checkType) {
+		Project project = new Project(params)
+		if (!project.validate()) {
+//			project.errors.allErrors.each {
+//				println it
+//			}
+			flash.message = 'The field(s) Name or Code are not unique across projects.'
+			if (checkType.equals('create')) {
+				redirect(action: "create")
+			} else {
+				//else edit
+				redirect(action: "edit", id: project.id)
+			}
+			return false
+		}
+		return true
+	}
+
 	def save() {
-		Project project = projectService.createProject(params)
-		if (project) {
-			flash.message = "Project $project.name created sucessfuly."
-			redirect(action: "index")
-		} else {
-			redirect(action: "create")
+		if(validateProject(params, 'create')) {
+			Project project = projectService.createProject(params)
+			if (project) {
+				flash.message = "Project $project.name created sucessfuly."
+				redirect(action: "index")
+			} else {
+				redirect(action: "create")
+			}
 		}
 	}
 
@@ -45,12 +65,14 @@ class ProjectController {
 	}
 
 	def update() {
-		Project project = projectService.updateProject(params)
-		if (project) {
-			flash.message = "Project $project.name updated sucessfuly."
-			redirect(action: "show", id: project.id)
-		} else {
-			redirect(action: "edit", id: project.id)
+		if(validateProject(params, 'edit')) {
+			Project project = projectService.updateProject(params)
+			if (project) {
+				flash.message = "Project $project.name updated sucessfuly."
+				redirect(action: "show", id: project.id)
+			} else {
+				redirect(action: "edit", id: project.id)
+			}
 		}
 	}
 }

@@ -17,8 +17,8 @@ class Project {
 	Integer priority
 
 	static constraints = {
-		name nullable: false, blank: false, matches: ALPHANUMERIC_CONSTRAINT
-		code nullable: false, blank: false, matches: ALPHANUMERIC_CONSTRAINT
+		name nullable: false, blank: false, matches: ALPHANUMERIC_CONSTRAINT, unique: true
+		code nullable: false, blank: false, matches: ALPHANUMERIC_CONSTRAINT, unique: true
 		techLead nullable: false
 		projectManager nullable: false
 		deliveryDate nullable: false

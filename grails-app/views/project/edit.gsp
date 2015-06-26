@@ -17,7 +17,7 @@
 </div>
 
 <div id="edit-project" class="content" role="main">
-    <h1>Edit project ${project.name}</h1>
+    <h1>Edit project ${project?.name}</h1>
     <g:if test="${flash.message}">
         <div class="message" role="status">${flash.message}</div>
     </g:if>

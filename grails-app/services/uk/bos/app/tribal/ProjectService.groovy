@@ -19,7 +19,7 @@ class ProjectService {
         if (project.priority > projectCount) {
             project.priority = projectCount + 1
         }
-        return project.save()
+        return project.save(flush: true)
     }
 
     /**
@@ -74,7 +74,7 @@ class ProjectService {
                 }
             }
             DataBindingUtils.bindObjectToInstance(project, params, [], ["id", "priority"], null)
-            project.save()
+            project.save(flush: true)
         }
     }
 
