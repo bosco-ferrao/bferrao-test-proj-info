@@ -21,6 +21,7 @@
     <g:if test="${flash.message}">
         <div class="message" role="status">${flash.message}</div>
     </g:if>
+    <h3>&nbsp;&nbsp;&nbsp;&nbsp;In edit for simplicity Name or Code cannot be modified. </h3>
     <g:form url="[resource: project, action: 'update']" method="PUT">
         <fieldset class="form">
             <g:render template="form"/>

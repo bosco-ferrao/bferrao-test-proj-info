@@ -1,5 +1,7 @@
 package uk.bos.app.tribal
 
+import org.springframework.web.servlet.ModelAndView
+
 class ProjectController {
 
 	ProjectService projectService
@@ -16,26 +18,20 @@ class ProjectController {
 		]
 	}
 
-	private def validateProject(Map params, String checkType) {
-		Project project = new Project(params)
+	private def validateProject(Project project, String checkType) {
 		if (!project.validate()) {
-//			project.errors.allErrors.each {
-//				println it
-//			}
+			//			project.errors.allErrors.each {
+			//				println it
+			//			}
 			flash.message = 'The field(s) Name or Code are not unique across projects.'
-			if (checkType.equals('create')) {
-				redirect(action: "create")
-			} else {
-				//else edit
-				redirect(action: "edit", id: project.id)
-			}
 			return false
 		}
 		return true
 	}
 
 	def save() {
-		if(validateProject(params, 'create')) {
+		Project project1 = new Project(params);
+		if(validateProject(project1, 'create')) {
 			Project project = projectService.createProject(params)
 			if (project) {
 				flash.message = "Project $project.name created sucessfuly."
@@ -43,6 +39,11 @@ class ProjectController {
 			} else {
 				redirect(action: "create")
 			}
+		} else {
+			return new ModelAndView("create", [ project : project1,
+				techLeads: Person.findAllByPosition(Position.TECH_LEAD),
+				managers : Person.findAllByPosition(Position.PROJECT_MANAGER)
+			])
 		}
 	}
 
@@ -65,7 +66,8 @@ class ProjectController {
 	}
 
 	def update() {
-		if(validateProject(params, 'edit')) {
+//		Project project1 = new Project(params);
+//		if(validateProject(project1, 'edit')) {
 			Project project = projectService.updateProject(params)
 			if (project) {
 				flash.message = "Project $project.name updated sucessfuly."
@@ -73,6 +75,8 @@ class ProjectController {
 			} else {
 				redirect(action: "edit", id: project.id)
 			}
-		}
+//		} else {
+//			redirect(action: "edit", id: project1.id)
+//		}
 	}
 }

@@ -49,6 +49,8 @@ class ProjectService {
      */
     @Transactional
     Project updateProject(Map params) {
+		params.remove('name');
+		params.remove('code');
         Project project = Project.get(params.id as Long)
         if (project) {
             Integer newPriority = params.priority as Integer
